@@ -51,6 +51,7 @@ public class resultWebScrape
               
                else if(i<100)
                      rollNo=eightDigCode+"0"+i;
+               else rollNo=eightDigCode+i;
                     
                String res=postToSite(rollNo,semester+""); 
                if(res.equalsIgnoreCase(nonExistentStudent)){
